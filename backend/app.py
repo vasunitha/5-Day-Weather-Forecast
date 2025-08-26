@@ -5,7 +5,8 @@ import requests
 import datetime
 
 app = Flask(__name__)
-CORS(app, resources={r"/weather/*": {"origins": r"http://localhost:\d+"}})
+CORS(app, origins=["*"])
+
 
 API_KEY = "04de74770f1697780a363fd798708378"
 DB = "weather.db"
