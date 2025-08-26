@@ -5,11 +5,13 @@ import requests
 import datetime
 
 app = Flask(__name__)
+pp.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///weather.db'  # Relative path to SQLite DB
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 CORS(app, origins=["*"])
 
 
 API_KEY = "04de74770f1697780a363fd798708378"
-DB = "weather.db"
+DB = SQLAlchemy(app)
 
 # Initialize DB table
 def init_db():
