@@ -3,7 +3,7 @@ import axios from "axios";
 import "./App.css";
 
 const apiKey = "04de74770f1697780a363fd798708378";
-const BACKEND_URL = "http://localhost:5001/weather"; // Flask backend
+const BACKEND_URL = "https://five-day-weather-forecast-v93k.onrender.com/weather"; // Flask backend
 const GOOGLE_MAPS_KEY = "AIzaSyB26mb59DX5eePZVVygX_2k_pRKPgKnxRA";
 const YOUTUBE_API_KEY = "AIzaSyB26mb59DX5eePZVVygX_2k_pRKPgKnxRA";
 
